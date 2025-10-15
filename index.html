@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica 01.01 – Estándares Web</title>
+  <meta name="description" content="Página de la práctica 01.01 de Estándares Web: estructura base, tabla y uso de etiquetas nuevas (figure y aside).">
+  <style>
+    
+    :root { --azul:#20e16a; --gris:#f7f7f7; }
+    body { font-family: system-ui, Arial, sans-serif; margin:0; background:var(--gris); }
+    header, footer { background: var(--azul); color:#fff; padding:16px; }
+    header h1, header h2, footer p { margin:0; }
+    main { padding:16px; max-width: 1000px; margin: auto; }
+    section { background:#fff; padding:16px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); margin-bottom:16px; }
+    h2 { margin-top:0; }
+    table { width:100%; border-collapse: collapse; }
+    caption { text-align:left; font-weight:600; margin-bottom:8px; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:left; }
+    th { background:#eee; }
+    .nuevas { display:grid; gap:16px; }
+    figure { margin:0; text-align:center; }
+    figure img { max-width:180px; height:auto; display:block; margin:8px auto; }
+    figcaption { font-size:.95rem; color:#444; }
+    aside { background:#fafafa; border:1px solid #e8e8e8; border-radius:10px; padding:12px; }
+    aside h3 { margin:0 0 6px; font-size:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Práctica 01.01 – Estándares Web</h1>
+    <h2>Programación y Plataformas Web</h2>
+  </header>
+
+  <main>
+    <!-- Tabla  -->
+    <section>
+      <h2>Elementos base del documento</h2>
+      <table>
+        <caption>Resumen de elementos obligatorios</caption>
+        <thead>
+          <tr>
+            <th scope="col">Elemento</th>
+            <th scope="col">Descripción</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Declaración del documento HTML5</td>
+           
+          </tr>
+          <tr>
+            <td>&lt;html lang="es"&gt;</td>
+            <td>Idioma del documento</td>
+            
+          </tr>
+          <tr>
+            <td>&lt;head&gt;</td>
+            <td>Metadatos, título, enlaces CSS</td>
+            
+          </tr>
+          <tr>
+            <td>&lt;body&gt;</td>
+            <td>Contenido visible</td>
+            
+          </tr>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>Encabezado principal</td>
+        
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td>Bloque temático</td>
+            
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Pie de página</td>
+          
+          </tr>
+          <tr>
+            <td>&lt;table&gt;</td>
+            <td>Tabla con al menos 3 filas</td>
+           
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--Etiquetas nuevas (figure y aside) -->
+    <section class="nuevas">
+      <h2>Etiquetas nuevas exploradas: &lt;figure&gt; y &lt;aside&gt;</h2>
+
+      <!-- Etiqueta figure -->
+      <figure>
+        <img
+          src="https://1.bp.blogspot.com/-HUIDDlEAZMg/V6F3kPZcQ3I/AAAAAAAAABY/f6owGRCMSQYlw-NO5XAMZuHrjceHgpl3wCLcB/s1600/HTML%2BIMAGEN%2BDE%2BFONDO.jpg"
+          alt="Logotipo de HTML5 sobre fondo claro" />
+        <figcaption>
+          Ilustración con <strong>&lt;figure&gt;</strong> y <strong>&lt;figcaption&gt;</strong> para contenido con pie de figura.
+        </figcaption>
+      </figure>
+
+      <!-- Etiqueta aside -->
+      <aside>
+        <h3>Nota al margen (uso de &lt;aside&gt;)</h3>
+        <p>
+          <strong>&lt;aside&gt;</strong> contiene información complementaria al contenido principal.
+          Aquí, por ejemplo, dejamos el enlace a la página de la Universidad Politécnica Salesiana.
+        </p>
+        <p>
+          Recurso: <a href="https://www.ups.edu.ec/" target="_blank" rel="noopener noreferrer">UPS</a>
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cinthya Ramon – Programación y Plataformas Web</p>
+  </footer>
+</body>
+</html>
